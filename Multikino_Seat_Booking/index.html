@@ -1,177 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multikino Booking Seat</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
-        <div class="movie-container">
-            <h1> Multikino: zarezerwuj miejsce i nie martw się potem</h1>
-            <label> Wybierz film: </label>
-            <select id="movie">
-                <option value="10"> Avengers: Endgame (10zł)</option>
-                <option value="12"> Kot w butach (12zł)</option>
-                <option value="14"> Spiderman (14zł)</option>
-                <option value="12"> Jutro (12zł)</option>
-            </select>
+      <div class="movie-container">
+        <h1>Multikino: zarezerwuj miejsce i nie martw się potem</h1>
 
-            <div class="screen">
-                <p> EKRAN </p>
-            </div>
+        <div class="options">
+          <label> Wybierz film: </label>
+          <select id="movie">
+            <option value="10"> Avengers: Endgame (10zł)</option>
+            <option value="12"> Kot w butach (12zł)</option>
+            <option value="14"> Spiderman (14zł)</option>
+            <option value="12"> Jutro (12zł)</option>
+          </select>
+        </div>
+        <div class="screen">
+          <p>EKRAN</p>
+        </div>
+        <div class="zone-wrapper">
+          <div class="zone-1">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat ocupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
 
-            <div class="zone-1">
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat occupied"></div>
-                <div class="seat occupied"></div>
-                <div class="seat"></div>
-                <div class="seat ocupied"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-            </div>
+          <div class="zone-2">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat seat-vip"></div>
+            <div class="seat seat-vip"></div>
+            <div class="seat seat-vip"></div>
+            <div class="seat seat-vip"></div>
+            <div class="seat seat-vip"></div>
+            <div class="seat seat-vip"></div>
+            <div class="seat seat-vip"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+            <div class="seat seat-A"></div>
+          </div>
 
-            <div class="zone-2">
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat occupied"></div>
-                <div class="seat occupied"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat seat-vip"></div>
-                <div class="seat seat-vip"></div>
-                <div class="seat seat-vip"></div>
-                <div class="seat seat-vip"></div>
-                <div class="seat seat-vip"></div>
-                <div class="seat seat-vip"></div>
-                <div class="seat seat-vip"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-                <div class="seat seat-A"></div>
-            </div>
+          <div class="zone-3">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
 
-            <div class="zone-3">
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-            </div>
-
-            <div class="zone-4">
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-            </div>
-
-            <div class="vip">
-                <span> +3zł </span>
-                <p> Strefa VIP </p>
-            </div>
-
-            <div class="area-A">
-                <span> +0,40zł </span>
-                <p> Strefa A </p>
-            </div>
-
-            <div class="area-B">
-                <p> Strefa B </p>
-            </div>
-
-            <div class="occupied">
-                <span> </span>
-                <p> Miejsce zajęte </p>
-            </div>
-
-            <div class="summary">
-                <p> Zarezerwowano <span id="count"> 0</span> bilety. Do zapłaty <span id="price"></span></p>
-
-            </div>
-
-
-
-
-
-
+          <div class="zone-4">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
         </div>
 
+        <div class="description-wrapper">
+          <div class="vip">
+            <span> +3,00 zł </span>
+            <p>Strefa VIP</p>
+          </div>
+
+          <div class="area-A">
+            <span> +0,40zł </span>
+            <p>Strefa A</p>
+          </div>
+
+          <div class="area-B">
+            <span></span>
+            <p>Strefa B</p>
+          </div>
+
+          <div class="place-occupied">
+            <span> </span>
+            <p>Miejsce zajęte</p>
+          </div>
+        </div>
+
+        <div class="summary">
+          <p>
+            Zarezerwowano <span id="count"> 0</span> bilety. Do zapłaty
+            <span id="price">0.</span>
+          </p>
+        </div>
+      </div>
     </div>
 
-
-
-
-
-
-    <script src="main.js"> </script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
