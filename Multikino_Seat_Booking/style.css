@@ -1,82 +1,187 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    /* background-color: rgb(204, 199, 199); */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .movie-container {
-    height: 100vh;
-    width: 70%;
-    background-color: gray;
-    margin: 0 auto;
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
 }
 
 h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 20px;
-    text-align: center;
-    padding: 100px 20px 50px 20px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  padding: 20px 20px 50px 20px;
+  color: rgb(212, 13, 106);
 }
 
-label {
-    margin: 0 auto;
+.options {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
 }
 
+select {
+  font-size: 20px;
+  padding: 5px 5px;
+}
 
 .screen {
-    height: 20px;
-    width: 90%;
-    padding: 20px 0;
-    background-color: burlywood;
-    text-align: center;
-    margin: 0 auto;
+  height: 25px;
+  width: 70%;
+  background-color: rgb(204, 202, 199);
+  text-align: center;
+  margin: 0 auto;
 }
 
 .screen p {
-    margin: auto 0;
+  font-size: 20px;
 }
 
 .seat {
-    width: 30px;
-    height: 30px;
-    border: 2px solid darkmagenta;
-    margin: 5px 5px;
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  background-color: rgb(48, 187, 122);
+}
+
+.zone-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .zone-1 {
-    display: flex;
-    width: 20%;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  width: 20%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 17px;
 }
 
 .zone-2 {
-    display: flex;
-    width: 50%;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-
 .zone-3 {
-    display: flex;
-    width: 20%;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  width: 15%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 20px;
 }
 
 .zone-4 {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 33px;
 }
+
+.description-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 10px;
+}
+
+.vip,
+.area-A,
+.area-B,
+.place-occupied {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.vip span {
+  background-color: rgb(212, 13, 106);
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.vip p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px;
+  color: rgb(212, 13, 106);
+}
+
+.area-A span {
+  background-color: rgb(45, 126, 192);
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.area-A p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px;
+  color: rgb(45, 126, 192);
+}
+
+.area-B span {
+  background-color: rgb(48, 187, 122);
+  padding: 5px 10px;
+  width: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.area-B p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px;
+  color: black;
+}
+
+.place-occupied span {
+  background-color: rgb(209, 212, 211);
+  padding: 5px 10px;
+  width: 70px;
+}
+
+.place-occupied p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px;
+  color: black;
+}
+
+.summary {
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+/* .summary p {
+  margin: 0 auto;
+} */
