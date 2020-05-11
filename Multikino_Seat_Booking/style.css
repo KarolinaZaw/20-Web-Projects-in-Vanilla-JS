@@ -33,6 +33,14 @@ h1 {
   font-size: 20px;
 }
 
+.seat.occupied {
+  background-color: gray;
+}
+
+.seat.selected {
+  background-color: rgb(72, 209, 243);
+}
+
 select {
   font-size: 20px;
   padding: 5px 5px;
@@ -56,6 +64,14 @@ select {
   margin: 5px 5px;
   border-radius: 5px;
   background-color: rgb(48, 187, 122);
+}
+
+.seat-vip {
+  background-color: rgb(212, 13, 106);
+}
+
+.seat-A {
+  background-color: rgb(45, 126, 192)
 }
 
 .zone-wrapper {
@@ -116,6 +132,7 @@ select {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .vip span {
   background-color: rgb(212, 13, 106);
   padding: 10px 10px;
